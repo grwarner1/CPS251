@@ -26,7 +26,7 @@
             app:argType="string"
             android:defaultValue="Image 1" />
         <argument
-            android:name="image1"
+            android:name="image"
             app:argType="integer"
             android:defaultValue="-1" />
     </fragment>

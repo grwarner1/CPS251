@@ -40,7 +40,7 @@ class first_picture : Fragment() {
         arguments?.let {
             val args = first_pictureArgs.fromBundle(it)
             binding.textView.text = args.message
-            binding.imageView.setImageResource(args.image1)
+            binding.imageView.setImageResource(args.image)
         }
     }
 

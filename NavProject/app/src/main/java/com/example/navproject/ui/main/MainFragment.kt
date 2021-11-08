@@ -41,21 +41,21 @@ class MainFragment : Fragment() {
         binding.button1.setOnClickListener {
             val action: MainFragmentDirections.ActionMainFragmentToFirstPicture =
                 MainFragmentDirections.actionMainFragmentToFirstPicture()
-            action.image1 = R.drawable.android_image_1
+            action.image = R.drawable.android_image_1
             action.message = "Image 1"
             Navigation.findNavController(it).navigate(action)
         }
         binding.button2.setOnClickListener {
             val action: MainFragmentDirections.ActionMainFragmentToFirstPicture =
                 MainFragmentDirections.actionMainFragmentToFirstPicture()
-            action.image1 = R.drawable.android_image_2
+            action.image = R.drawable.android_image_2
             action.message = "Image 2"
             Navigation.findNavController(it).navigate(action)
         }
         binding.button3.setOnClickListener {
             val action: MainFragmentDirections.ActionMainFragmentToFirstPicture =
                 MainFragmentDirections.actionMainFragmentToFirstPicture()
-            action.image1 = R.drawable.android_image_3
+            action.image = R.drawable.android_image_3
             action.message = "Image 3"
             Navigation.findNavController(it).navigate(action)
         }
