@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navproject.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_first_picture"
+            app:destination="@id/first_picture" />
+    </fragment>
+    <fragment
+        android:id="@+id/first_picture"
+        android:name="com.example.navproject.first_picture"
+        android:label="fragment_first_picture"
+        tools:layout="@layout/fragment_first_picture" >
+
+        <argument
+            android:name="message"
+            app:argType="string"
+            android:defaultValue="Image 1" />
+        <argument
+            android:name="image1"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

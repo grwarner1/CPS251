@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navigationproject.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        app:defaultNavHost="true"
+        <action
+            android:id="@+id/action_mainFragment_to_firstPicture"
+            app:destination="@id/firstPicture" />
+        <action
+            android:id="@+id/action_mainFragment_to_secondPicture"
+            app:destination="@id/secondPicture" />
+        <action
+            android:id="@+id/action_mainFragment_to_thirdPicture"
+            app:destination="@id/thirdPicture" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstPicture"
+        android:name="com.example.navigationproject.firstPicture"
+        android:label="fragment_first_picture"
+        tools:layout="@layout/fragment_first_picture" />
+    <fragment
+        android:id="@+id/secondPicture"
+        android:name="com.example.navigationproject.secondPicture"
+        android:label="fragment_second_picture"
+        tools:layout="@layout/fragment_second_picture" />
+    <fragment
+        android:id="@+id/thirdPicture"
+        android:name="com.example.navigationproject.thirdPicture"
+        android:label="fragment_third_picture"
+        tools:layout="@layout/fragment_third_picture" />
+</navigation>
