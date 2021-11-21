@@ -1,4 +1,4 @@
-package com.ebookfrenzy.carddemo
+package com.ebookfrenzy.IntentAssignment
 
 val titles = arrayOf("Chapter One",
     "Chapter Two", "Chapter Three", "Chapter Four",
@@ -22,7 +22,7 @@ class Data {
         fun getTitles(): Array<String>{
             val size = titles.size-1
 
-            var out: ArrayList<String> = ArrayList<String>()
+            val out: ArrayList<String> = ArrayList ()
 
             for(i in 0..size) {
                 out.add(titles[(0..size).random()])
@@ -34,7 +34,7 @@ class Data {
         fun getDetails(): Array<String>{
             val size = details.size-1
 
-            var out: ArrayList<String> = ArrayList<String>()
+            val out: ArrayList<String> = ArrayList()
 
             for(i in 0..size) {
                 out.add(details[(0..size).random()])
@@ -46,7 +46,7 @@ class Data {
         fun getImages(): IntArray{
             val size = images.size
 
-            var out: ArrayList<Int> = ArrayList<Int>()
+            val out: ArrayList<Int> = ArrayList()
 
             for(i in 0..size) {
                 out.add(images[(0..size).random()])

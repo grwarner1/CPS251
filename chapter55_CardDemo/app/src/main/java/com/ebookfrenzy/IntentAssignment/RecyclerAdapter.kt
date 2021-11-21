@@ -1,14 +1,14 @@
-package com.ebookfrenzy.carddemo
+package com.ebookfrenzy.IntentAssignment
 
 import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.TextView
 import android.view.View
 import android.view.ViewGroup
+import android.content.Intent
+import androidx.core.content.ContextCompat.startActivity
 
 import androidx.recyclerview.widget.RecyclerView
-
-import com.google.android.material.snackbar.Snackbar
 
 class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
@@ -45,12 +45,16 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
             itemTitle = itemView.findViewById(R.id.itemTitle)
             itemDetail = itemView.findViewById(R.id.itemDetail)
 
-            /*itemView.setOnClickListener { v: View  ->
-                var position: Int = getAdapterPosition()
+            itemView.setOnClickListener { v: View ->
+                val i = Intent(v.getContext(),MainActivity2::class.java)
 
-                Snackbar.make(v, "Click detected on item $position",
-                    Snackbar.LENGTH_LONG).setAction("Action", null).show()
-            }*/
+                i.putExtra("itemName", titles[layoutPosition])
+                i.putExtra("itemDesc", details[layoutPosition])
+                i.putExtra("image", images[layoutPosition])
+
+                startActivity(v.context,i,null)
+
+            }
         }
     }
 }

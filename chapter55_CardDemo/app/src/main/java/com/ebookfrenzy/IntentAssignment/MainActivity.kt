@@ -1,4 +1,4 @@
-package com.ebookfrenzy.carddemo
+package com.ebookfrenzy.IntentAssignment
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.Menu
 import android.view.MenuItem
 
-import com.ebookfrenzy.carddemo.databinding.ActivityMainBinding
+import com.ebookfrenzy.IntentAssignment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

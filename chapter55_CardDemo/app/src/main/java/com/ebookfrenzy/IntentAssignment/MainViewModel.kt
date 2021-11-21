@@ -1,4 +1,4 @@
-package com.ebookfrenzy.carddemo
+package com.ebookfrenzy.IntentAssignment
 
 import androidx.lifecycle.ViewModel
 
